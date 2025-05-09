@@ -41,6 +41,7 @@ if os.path.exists("face_embeddings.pkl"):
     with open("face_embeddings.pkl", "rb") as f:
         Known_embeddings, Known_labels = pickle.load(f)
 else:
+#The path "known_faces" contains the image of the faces to be authenticated and registered
     for file in os.listdir("Known_faces"):
         if file.endswith(".jpg") or file.endswith(".png"):
             img = cv2.imread(os.path.join("Known_faces", file))
