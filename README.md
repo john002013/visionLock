@@ -11,13 +11,14 @@ If YOLO confirms a human is present, the image is cropped and passed to FaceNet,
 **1.** The embedding is compared against a database of registered faces.<br>
 **2.** If a match is found above a certain threshold, the user is authenticated.<br>
 # Security Control via Arduino
-  Upon successful face verification, a signal is sent over UART to an Arduino which control a solenoid lock to either unlock a door/safe. **After 5secs, the door/safe automatically re-locks.**<br>
+  Upon successful face verification, a signal is sent over UART to an Arduino which control a solenoid lock to either unlock a door/safe. After 5secs, the door/safe automatically re-locks.<br>
 #  Alerting System
 If the detected person does not match any registered face in the database (i.e. face verification fails), the system takes the following actions:<br>
 **1.** The cropped image of the unverified person is saved locally.<br>
 **2.** This image is then uploaded to a cloud-based server (e.g., gofile.io).<br>
 **3.** A real-time SMS alert is sent to the authorized user, containing a link to view the uploaded image, so they can visually verify the intruder remotely.<br>
 
+_The whole process runs for 2minutes and shutdown automatically and iterate the whole process again_
 **VisionLock stands out as a powerful blend of AI and embedded systems, offering real-time, automated access control with intelligent alerting framework making it an innovative and practical solution for modern home, office security and safe.**
 
 
