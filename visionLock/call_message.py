@@ -6,11 +6,10 @@ from datetime import datetime
 import os
 
 # Twilio credentials
-sid = 'AC267d1122c5624827d3f7ee1cfa9fe0c5'
-token = '424198ee5d63c93edcc770544642fa1e'
-twilio_number = '+12346353207'
-number = '+2349168881444'
-img_id = '14c7a0b4206be39'
+sid = 'YOUR_TWILIO_SSID'
+token = 'YOUR_TWILIO_API_KEY'
+twilio_number = 'PURCHASED_NUMBER'
+number = 'VERIFIED_NUMBER'
 client = Client(sid, token)
 
 #for image uploads and getting links to image...............................................................................
@@ -35,7 +34,7 @@ def upload(image_path):
         print("Upload error:", e)
         return None
 
-#For sending message and link to phone....................................................................................
+#For sending message and link to phone vis SMS....................................................................................
 
 def send_message(image_url):
     
