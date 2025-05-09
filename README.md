@@ -18,7 +18,7 @@ If the detected person does not match any registered face in the database (i.e. 
 **2.** This image is then uploaded to a cloud-based server (e.g., gofile.io).<br>
 **3.** A real-time SMS alert is sent to the authorized user, containing a link to view the uploaded image, so they can visually verify the intruder remotely.<br>
 
-_The whole process runs for 2minutes and shutdown automatically and iterate the whole process again_
+_The entire process runs for 2 minutes, then automatically shuts down and iterate the whole cycle from the beginning if an object is still near it._
 **VisionLock stands out as a powerful blend of AI and embedded systems, offering real-time, automated access control with intelligent alerting framework making it an innovative and practical solution for modern home, office security and safe.**
 
 
