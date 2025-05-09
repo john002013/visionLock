@@ -2,7 +2,7 @@
 Computer Vision-Based Smart security System using YOLO and FaceNet
 
   VisionLock is a smart security access control system powered by computer vision and embedded systems. It combines YOLO for human detection, FaceNet for face verification, and Arduino control to offer secure, intelligent security access and real-time intrusion alerts:
-# Activation with Ultrasonic Sensor and Human detection with YOLO
+# Activation with Ultrasonic Sensor + Human detection with YOLO
   The system begins by using an ultrasonic sensor to detect the presence of an object near the secured premises. Once an object is detected, the camera is triggered for video capturing and further analysis.<br>
 **1.** If the detected object is not a human, the system runs a basic check for two minutes, then shuts down automatically to conserve resources.<br>
 **2.** If the object is a human, the system activates the first model—YOLOv8n—which performs real-time person detection to confirm human presence.<br>
