@@ -1,3 +1,8 @@
+#This entire block of code mean so much to me and it is one of the best of code I've ever wrote
+#And the reason is that code is a demonstration multi-phase object detection and the fact that, I was able to blend it with embedded system.
+#This system actuate when an object move closer to it and on that instance a deepLearning model (YOLOv8n) run a first detection if an object is near.
+#if an object is near then this system just check if it human and if it's not it runs for 2minute and stopped but if it is a human, it cropped if and pass it to the second model for verification.
+#and if it is an allowed face, it granted acess but if it is not it save it locally and upload it to a cloud sorage with the link being sent to the owner of the premises as notification of intrusion.
 import cv2
 from ultralytics import YOLO
 import math
@@ -151,3 +156,4 @@ while time.time() - start_time < 130:
 cv2.destroyAllWindows()
 ser.close()
 sys.exit()
+
